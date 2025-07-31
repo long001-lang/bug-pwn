@@ -1,6 +1,6 @@
 # Decription
 
-BOF (Buffer Over Flow) là một lỗi rất phổ biến và nguy hiểm trong chương trình. Nó có thể gây ra mất/ghì đè dữ liệu nhạy cảm thậm chí có thể lấy được toàn quyền hệ thống.
+BOF (Buffer Over Flow) là một lỗi rất phổ biến và nguy hiểm trong lập trình. Nó có thể gây ra mất/ghì đè dữ liệu nhạy cảm thậm chí có thể lấy được toàn quyền hệ thống.
 
 Khi một biến được khai báo với 1 số lượng nhất định nhưng đầu vào lại không kiểm soát số lượng nhập. Lúc này bof sẽ gây ra tràn dung lượng của biến đó và gây phá vỡ stack, tràn sang cả vùng nhớ lân cận.
 
@@ -65,6 +65,8 @@ Vậy payload = b'a'*136 + p64(win_addres)
 
 ![](images/flag.png)
 
+
+Tổng kết lại là buf có 128 bytes nhưng ta có thể nhập đến tận 136+8 bytes nữa làm ghì đè ret và kiểm soát nó.
 # Full Script
 
 ```c
